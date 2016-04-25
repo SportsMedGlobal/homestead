@@ -3,6 +3,9 @@ ip: "192.168.10.10"
 memory: 2048
 cpus: 1
 provider: virtualbox
+platform: "sportsmed"
+downloaddb: "yes"
+refreshdb: "yes"
 
 authorize: ~/.ssh/id_rsa.pub
 
@@ -14,11 +17,11 @@ folders:
       to: /home/vagrant/Code
 
 sites:
-    - map: homestead.app
+    - map: platform.dev
       to: /home/vagrant/Code/Laravel/public
 
 databases:
-    - homestead
+    - platform
 
 # blackfire:
 #     - id: foo
